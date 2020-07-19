@@ -48,6 +48,7 @@ right now, and the microcontroller can hold 64/128 KB of code for the c15/c18
 revision respectively.
 
 ## Bluetooth
-As of July 6, 2020, we have not yet reversed the Obins bluetooth firmware nor
-started writing our own. However, if you are interested, feel free to kick start
-this project.
+Currently the bluetooth support is based on the original Obins BLE processor firmware,
+which means you will not need to reflash the BLE chip if you have the latest stock 
+firmware on it. Contact me in the discord if you need a copy of the stock BLE firmware
+to flash.
