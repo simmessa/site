@@ -67,18 +67,18 @@ git clone https://github.com/OpenAnnePro/annepro2-shine.git --recursive
 0. Build using
 ```bash
 # for C15
-make
+make C15
 # for C18
-make MODEL=C18
+make C18
+# for both
+make
 ```
 
 0. If built without error you can find the binary in `build/` directory.
 You will flash the .bin file using annepro2 tools
 ```bash
-annepro2_tools -t led path-to-the-bin-file.bin
-```
-*Note: all the extra argument about C18 revision still applies here*
-
-Once the tool has completed, you can simply replug the keyboard to activate the firmware.
+annepro2_tools -t led build/annepro2-shine-C15.bin
+# for C18
+annepro2_tools -p 8009 -t led build/annepro2-shine-C18.bin
 
 Enjoy!
