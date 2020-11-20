@@ -80,5 +80,6 @@ You will flash the .bin file using annepro2 tools
 annepro2_tools -t led build/annepro2-shine-C15.bin
 # for C18
 annepro2_tools -p 8009 -t led build/annepro2-shine-C18.bin
+```
 
 Enjoy!
