@@ -49,11 +49,7 @@ This should complete without any error. And you should be able to see a file nam
 ```bash
 annepro2_tools annepro2_c15_default.bin
 ```
-If you have the C18 revision, you will need to add `-p 8009` to the argument list
-in order to specify 0x8009 as the USB product ID. If this reports can't find device
-please double check you have the keyboard in IAP mode. We have found out some version
-of the bootloader only show one interface, which require the use of `--loosy` argument
-to use the first interface found on the device with `0x04d9:8009` vid pid pair.
+If this reports can't find device please double check you have the keyboard in IAP mode.
 
 # Anne Pro 2 Shine
 
@@ -77,9 +73,10 @@ make
 0. If built without error you can find the binary in `build/` directory.
 You will flash the .bin file using annepro2 tools
 ```bash
+# for C15
 annepro2_tools -t led build/annepro2-shine-C15.bin
 # for C18
-annepro2_tools -p 8009 -t led build/annepro2-shine-C18.bin
+annepro2_tools -t led build/annepro2-shine-C18.bin
 ```
 
 Enjoy!
