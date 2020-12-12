@@ -89,8 +89,10 @@ make
 0. If built without error you can find the binary in `build/` directory.
 You will flash the .bin file using annepro2 tools
 ```bash
+# for C15
 annepro2_tools -t led build/annepro2-shine-C15.bin
+
 # for C18
 annepro2_tools -t led -i=[[interface_number]] build/annepro2-shine-C18.bin
-
+```
 Enjoy!
