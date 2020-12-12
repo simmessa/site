@@ -18,7 +18,7 @@ Checkout the docker build script provided by `@zinosat`.
 # Get AnnePro2 Tools
 
 0. Install the latest stable `rust` toolchain using [rustup](https://rustup.rs/)
-0. Also install [Visual Studio Community edition](https://visualstudio.microsoft.com/downloads/) 
+0. Also install [Visual Studio Community edition](https://visualstudio.microsoft.com/downloads/)
 including the C/C++ module to prevent errors while compiling
 0. Download or Clone the [AnnePro2-Tools](https://github.com/OpenAnnePro/AnnePro2-Tools) project.
 0. Compile the tool using
@@ -56,7 +56,7 @@ If you have the C18 revision, you must specify the interface number.
 ```bash
 annepro2_tools annepro2_c18_default.bin -i=[[interface_number]]
 ```
-Replace [[interface number]] with the keyboard's interface number. 
+Replace [[interface number]] with the keyboard's interface number.
 
 If the tool reports can't find device please double check you have the keyboard in IAP mode.
 
@@ -78,7 +78,6 @@ Building the shine firmware is very simailar to the QMK firmware.
 ```bash
 git clone https://github.com/OpenAnnePro/annepro2-shine.git --recursive
 ```
-
 0. Build using
 ```bash
 # for C15
@@ -88,13 +87,10 @@ make C18
 # for both
 make
 ```
-
-0. If built without error you can find the binary in `build/` directory.
-You will flash the .bin file using annepro2 tools
+0. If built without error you can find the binary in `build/` directory. You will flash the .bin file using annepro2 tools.
 ```bash
 # for C15
 annepro2_tools -t led build/annepro2-shine-C15.bin
-
 # for C18
 annepro2_tools -t led -i=[[interface_number]] build/annepro2-shine-C18.bin
 ```
