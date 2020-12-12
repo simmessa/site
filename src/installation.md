@@ -18,12 +18,15 @@ Checkout the docker build script provided by `@zinosat`.
 # Get AnnePro2 Tools
 
 0. Install the latest stable `rust` toolchain using [rustup](https://rustup.rs/)
+0. Also install [Visual Studio Community edition](https://visualstudio.microsoft.com/downloads/) 
+including the C/C++ module to prevent errors while compiling
 0. Download or Clone the [AnnePro2-Tools](https://github.com/OpenAnnePro/AnnePro2-Tools) project.
 0. Compile the tool using
 ```bash
 cargo build --release
 ```
 0. The compiled tool should be in `./target/release/annepro2_tools` (In later I will refer to this as `annepro2_tools`)
+
 
 # Get QMK firmware
 *Hint: If you are on windows, I recommend completing this step using WSL. YMMV*
