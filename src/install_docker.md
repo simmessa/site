@@ -23,7 +23,8 @@ RUN sed -i \
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
   build-essential less git sudo \
-  pkg-config libusb-1.0-0-dev cargo gcc-arm-none-eabi libstdc++-arm-none-eabi-newlib
+  pkg-config libusb-1.0-0-dev cargo gcc-arm-none-eabi libstdc++-arm-none-eabi-newlib \
+  ca-certificates
 
 RUN adduser --disabled-password --gecos '' dev && \
     adduser dev sudo && \
